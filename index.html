@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unit Converter App allows users to convert values between different units of measurement.">
+    <meta name="keywords" content="unit converter, conversion, measurements, length, temperature, weight, volume">
+    <meta name="author" content="TechFeline">
+    <meta name="website" content="https://techfeline.github.io">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <div class="converter">
+            <div class="input-group">
+                <input type="number" id="inputValue" placeholder="Enter value">
+            </div>
+            <div class="input-group select">
+                <select id="fromUnit"></select>
+            </div>
+            <div class="input-group select">
+                <select id="toUnit"></select>
+                <div class="select-wrapper">
+                    <div class="select-dropdown"></div>
+                </div>
+            </div>
+            <button class="convert-btn" onclick="convert()">Convert</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
